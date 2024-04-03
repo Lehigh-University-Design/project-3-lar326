@@ -19,7 +19,7 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    /*background-color: #fff;*/
   }
   
   .header li a {
@@ -31,7 +31,7 @@ a {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    /*background-color: #f4f4f4;*/
   }
   
   .header .logo {
@@ -48,6 +48,10 @@ a {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    a{
+        color: #f4f4f4;
+        font-weight: bold;
+    }
   }
   
   /* menu icon */
@@ -62,7 +66,7 @@ a {
   }
   
   .header .menu-icon .navicon {
-    background: #000;
+    background: #f4f4f4;
     display: block;
     height: 2px;
     position: relative;
@@ -72,7 +76,7 @@ a {
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
-    background: #000;
+    background: #f4f4f4;
     content: '';
     display: block;
     height: 100%;
@@ -142,8 +146,7 @@ a {
     grid-template-columns: 2fr 3fr;
     gap: 2em;
     margin-bottom: 1em;
-    background-color: black;
-    color: white;
+    border:1px solid black;
     padding: 2em;
   }
 
@@ -196,6 +199,11 @@ a {
     margin-bottom: 0;
   }
 
+  .grid{
+    padding: var(--grid-gutter) 0;
+    margin:10px;
+  }
+
   /* media queries */
 @media only screen and (max-width: 768px) {
   
@@ -230,3 +238,35 @@ a {
       }
   
   }
+
+.item1 { grid-area: one; }
+.item2 { grid-area: two; }
+.item3 { grid-area: three; }
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+.item7 { grid-area: seven; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'one two three three four four'
+    'five five three three four four'
+    'six six seven seven four four';
+  gap: 10px;
+  border:1px solid black;
+  padding: 5px;
+  img {
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.grid-container > div {
+  border:1px solid black;
+  text-align: center;
+  padding: 0px 0;
+  margin: 0;
+  font-size: 30px;
+}
