@@ -12,14 +12,13 @@
 </head>
 <body>
 
-<div id="Home" class="tabcontent">
     <header class="header">
         <a href="" class="logo">BJK</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
 
-            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button></li>
             <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
             <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
             <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
@@ -27,6 +26,7 @@
         </ul>
     </header>
 
+<div id="Home" class="tabcontent">
     <div class="intro">
         <img src="images/cover.jpg">
     </div>
@@ -34,76 +34,24 @@
 </div>
 
 <div id="Bio" class="tabcontent">
-    <header class="header">
-        <a href="" class="logo">BJK</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-
-            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
-            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
-            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
-            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
-            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
-        </ul>
-    </header>
     <div class="intro">
         <img src="images/bjk-bio.jpg">
     </div>
 </div>
 
 <div id="Tennis" class="tabcontent">
-    <header class="header">
-        <a href="" class="logo">BJK</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-
-            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
-            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
-            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
-            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
-            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
-        </ul>
-    </header>
     <div class="intro">
         <img src="images/tennis.jpg">
     </div>
 </div>
 
 <div id="Battle" class="tabcontent">
-    <header class="header">
-        <a href="" class="logo">BJK</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-
-            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
-            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
-            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
-            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
-            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
-        </ul>
-    </header>
     <div class="intro">
         <img src="images/battle.jpg">
     </div>
   </div>
 
 <div id="Legacy" class="tabcontent">
-    <header class="header">
-        <a href="" class="logo">BJK</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-
-            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
-            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
-            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
-            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
-            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
-        </ul>
-    </header>
     <div class="intro">
         <img src="images/legacy.jpg">
     </div>
@@ -234,6 +182,7 @@
         tablinks[i].style.backgroundColor = "";
     }
     document.getElementById(pageName).style.display = "block";
+    document.getElementById("menu-btn").checked = false;
     }
 
     document.getElementById("defaultOpen").click();
