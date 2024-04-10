@@ -12,26 +12,106 @@
 </head>
 <body>
 
-    <!-- CSS Responsive Nav  -->
-
+<div id="Home" class="tabcontent">
     <header class="header">
         <a href="" class="logo">BJK</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#bio">Biography</a></li>
-          <li><a href="#tennis">Tennis Career</a></li>
-          <li><a href="#battle">Battle of the Sexes</a></li>
-          <li><a href="#leagacy">Legacy</a></li>
-        </ul>
-      </header>
 
-      <div class="intro">
+            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
+            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
+            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
+            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
+        </ul>
+    </header>
+
+    <div class="intro">
         <img src="images/cover.jpg">
     </div>
-      
+    
+</div>
 
+<div id="Bio" class="tabcontent">
+    <header class="header">
+        <a href="" class="logo">BJK</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+
+            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
+            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
+            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
+            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
+        </ul>
+    </header>
+    <div class="intro">
+        <img src="images/bjk-bio.jpg">
+    </div>
+</div>
+
+<div id="Tennis" class="tabcontent">
+    <header class="header">
+        <a href="" class="logo">BJK</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+
+            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
+            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
+            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
+            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
+        </ul>
+    </header>
+    <div class="intro">
+        <img src="images/tennis.jpg">
+    </div>
+</div>
+
+<div id="Battle" class="tabcontent">
+    <header class="header">
+        <a href="" class="logo">BJK</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+
+            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
+            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
+            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
+            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
+        </ul>
+    </header>
+    <div class="intro">
+        <img src="images/battle.jpg">
+    </div>
+  </div>
+
+<div id="Legacy" class="tabcontent">
+    <header class="header">
+        <a href="" class="logo">BJK</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+
+            <li><button class="tablink" onclick="openPage('Home', this)"id="defaultOpen">Home</button></li>
+            <li><button class="tablink" onclick="openPage('Bio', this)">Biography</button></li>
+            <li><button class="tablink" onclick="openPage('Tennis', this)">Tennis Career</button></li>
+            <li><button class="tablink" onclick="openPage('Battle', this)">Battle of the Sexes</button></li>
+            <li><button class="tablink" onclick="openPage('Legacy', this)">Legacy</button></li>
+        </ul>
+    </header>
+    <div class="intro">
+        <img src="images/legacy.jpg">
+    </div>
+</div>
+
+    
+      
+<!--
       <div class="container post-nav">
         <div class="post">
             <h2>The Title of My Article</h2>
@@ -103,9 +183,124 @@
             <p>“Whatever you care about, you can make a difference. You really can. Don’t ever underestimate yourself. Do not underestimate the human spirit.”</p>
         </div>
         <div class="item7"><img src="images/seven.jpg"></div>
-      </div>
+    </div>
 
-    
+    <div class="w3test">
+        <div class="header">
+            <h1>Responsive Image Grid</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+        </div>
+          
+          Photo Grid
+        <div class="row"> 
+            <div class="column">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/test.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+            </div>  
+            <div class="column">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/one.jpg" style="width:100%">
+              <img src="images/one.jpg" style="width:100%">
+              <img src="images/one.jpg" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="images/one.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+              <img src="images/two.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+-->
+
+    <div class="container">
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1556783900-2ebe375c20fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="vertical">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="horizontal">
+            <img src="https://images.unsplash.com/photo-1548506923-99f6e89852fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="vertical">
+            <img src="https://images.unsplash.com/photo-1547903006-2845abe6e3c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1547707981-eeb6a7ac3c25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="horizontal">
+            <img src="https://images.unsplash.com/photo-1547297355-7d839b27ffb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="big">
+            <img src="https://images.unsplash.com/photo-1511534520542-e0fb6d4a4df6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1546213642-d79f08fa2169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div class="vertical">
+            <img src="https://images.unsplash.com/photo-1546260863-51e27ff43c68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1546046142-8f8fae7de558?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1545844895-1bf88a0213a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1545862434-853c6375b9f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+    </div>
+
+
+
+
+<script>
+    function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 </html>
