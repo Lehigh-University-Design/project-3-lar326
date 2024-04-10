@@ -111,7 +111,7 @@
 
     
       
-<!--
+
       <div class="container post-nav">
         <div class="post">
             <h2>The Title of My Article</h2>
@@ -173,63 +173,7 @@
         
 
     </div>
-    <div class="grid-container">
-        <div class="item1"><img src="images/one.jpg"></div>
-        <div class="item2"><img src="images/two.jpg"></div>
-        <div class="item3"><img src="images/three.jpg"></div>  
-        <div class="item4">4<img src="images/test.jpg"></div>
-        <div class="item5"><img src="images/five.jpg"></div>
-        <div class="item6">
-            <p>“Whatever you care about, you can make a difference. You really can. Don’t ever underestimate yourself. Do not underestimate the human spirit.”</p>
-        </div>
-        <div class="item7"><img src="images/seven.jpg"></div>
-    </div>
 
-    <div class="w3test">
-        <div class="header">
-            <h1>Responsive Image Grid</h1>
-            <p>Resize the browser window to see the responsive effect.</p>
-        </div>
-          
-          Photo Grid
-        <div class="row"> 
-            <div class="column">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/test.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-            </div>  
-            <div class="column">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/one.jpg" style="width:100%">
-              <img src="images/one.jpg" style="width:100%">
-              <img src="images/one.jpg" style="width:100%">
-            </div>
-            <div class="column">
-              <img src="images/one.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-              <img src="images/two.jpg" style="width:100%">
-            </div>
-        </div>
-    </div>
--->
 
     <div class="container">
         <div class="big">
@@ -278,27 +222,20 @@
 
 <script>
     function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
+    // Hide elements with class="tabcontent"*/
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // Remove the background color of all tablinks/buttons
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-
-    // Show the specific tab content
     document.getElementById(pageName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
     }
 
-    // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 </script>
 
