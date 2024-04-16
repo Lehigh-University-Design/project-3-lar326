@@ -182,6 +182,21 @@ body, html {
       padding:0;
       margin:0;
     }
+    .title{
+      color:black;
+      font-size: 5em;
+      position: absolute;
+      top: 40%;
+      left:50px;
+    }
+  }
+
+  .quote{
+    background-color: grey;
+    h2{
+      font-size:2em;
+      padding: 4em;
+    }
   }
 }
 
