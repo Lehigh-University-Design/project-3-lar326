@@ -1,6 +1,13 @@
 a {
     color: #000;
   }
+  p{
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+  }
   
 body, html {
   height: 100%;
@@ -49,6 +56,8 @@ body, html {
 }
 
 .header .logo {
+  font-family:"Libre Franklin", sans-serif;
+  font-weight: 600;
   display: block;
   float: left;
   font-size: 2em;
@@ -183,6 +192,9 @@ body, html {
       margin:0;
     }
     .title{
+      font-family: "Libre Franklin", sans-serif;
+      font-style: italic;
+      font-weight:500;
       color:black;
       font-size: 5em;
       position: absolute;
@@ -192,10 +204,44 @@ body, html {
   }
 
   .quote{
-    background-color: grey;
-    h2{
-      font-size:2em;
-      padding: 4em;
+    width: 100%;
+    background-color:#c5d8a9;
+
+    .blockquote1  {
+      box-sizing: border-box;
+      padding: 60px 80px 40px;
+      max-width: 1090px;
+      width: 100%;
+      /* make sure it can fit into its container */
+      text-align: center;
+    }
+    
+    .blockquote1 h7 {
+      font-family: "Utopia-italic";
+      font-size: 35px;
+      font-weight: 700px;
+      text-align: center;
+    }
+    
+    .blockquote1 cite {
+      color: white;
+      position: relative;
+      font-size: 14px;
+      margin-top: 5px;
+      text-align: right; /* added */
+      width: 100%;
+      display: inline-block;
+    }
+    
+    blockquote {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      max-width: 100%;
+      margin: 0.25em 0;
+      padding: 0.35em 40px;
+      line-height: 1.45;
+      color: #383838;
     }
   }
 }
@@ -208,13 +254,27 @@ body, html {
 
 
 
+.text{
+  padding:2em;
+  color:black;
+  font-size:18px;
+  text-align: center;
+}
+
+#content {
+  margin-bottom: 1em;
+  margin-top:0;
+  padding: 2em;
+  color: black;
+}
+
 #content {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+
   gap: 2em;
   margin-bottom: 1em;
-  border: 1px solid black;
   padding: 2em;
+  color: black;
 }
 
 .post {
@@ -227,7 +287,30 @@ body, html {
     align-items: flex-start;
   }
   p {
-    margin-top: 0;
+    margin-top: 1em;
+
+  }
+  img {
+    width: 33%;
+    height: auto;
+    display: block;
+    margin-right: 1em;
+  }
+}
+
+.post2 {
+  margin-bottom: 1em;
+  .img-container {
+    aspect-ratio: 1/1;
+  }
+  .post-stuff {
+    display: flex;
+    align-items: flex-start;
+  }
+  p {
+    margin-top: 1em;
+    text-align: right;
+    padding-right: 1em;
   }
   img {
     width: 33%;
@@ -295,56 +378,118 @@ body, html {
 }
 
 
-.w3test{
-box-sizing: border-box;
 
-margin: 0;
-font-family: Arial;
 
-.header {
-  text-align: center;
-  padding: 32px;
+
+.hpage{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  p{
+    font-style: bold;
+  }
 }
 
-.row {
-  display: -ms-flexbox; /* IE10 */
+#png2{
+  position:absolute;
+  width:45%;
+  top:200px;
+  left: 40px;
+  z-index:1;
+}
+.caption{
+  color:black;
+  position: fixed;
+  top:300px;
+  left: 50px;
+  z-index:1;
+}
+
+.line{
+  padding:0;
+  margin:0;
+  border: 1.5px solid black;
+}
+
+.gallery{
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px 20px 0px 20px;
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+.gallery .one{
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+.gallery .one img{
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 869px){
+  .gallery{
+    flex-direction: column;
+    padding:10px;
+  }
+  .gallery .one{
+    width: 100%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+.stats{
+  color:black;
+  margin-top: 5em;
+  padding-bottom:0;
+  margin-left: 5em;
+  position: relative;
+  justify-content:center;
+  align-items: center;
+  p{
+    color: #E0218A;
+    font-style: bold;
   }
 }
+
+.hpage{
+  display: grid;
+  grid-template-columns: 20fr 8fr;
+}
+.grid{
+  padding: var(--grid-gutter) 0;
+  margin:10px;
+}
+
+/* media queries */
+@media only screen and (max-width: 868px) {
+  .hpage {
+    padding: 1em;
+    grid-template-columns: 1fr;
+    
+  }
+  .stats {
+    margin-top: 0;
+    order: 1;
+  }
+  .gallery {
+    order: 2;
+    width: 95%;
+    margin-left:0;
+  }
+}
+
+.footer{
+  display:flex;
+  justify-content: center;
+  background-color: #242526;
+  height:170px;
+  .buttons{
+    padding: 1em;
+    margin-top:2em;
+  }
 }
 
 
@@ -352,39 +497,130 @@ font-family: Arial;
 
 
 
-
-
-
-
-
-.container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-grid-auto-rows: 200px;
-grid-gap: 5px;
-grid-auto-flow: dense;
-border: 1px solid black;
-padding: 5px;
+.wrapper{
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
 }
-
-.container img {
-width: 100%;
-height: 100%;
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: black;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
 }
-
-.horizontal{
-grid-column: span 2;
+.wrapper .row{
+  display: flex;
 }
-.vertical {
-grid-row: span 2;
+.wrapper .row-1{
+  justify-content: flex-start;
 }
-.big{
-grid-column: span 2;
-grid-row: span 2;
+.wrapper .row-2{
+  justify-content: flex-end;
 }
-
-
-
-
-
-
+.wrapper .row section{
+  background: #c5d8a9;
+  border-radius: 5px;
+  width: calc(50% - 80px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #c5d8a9;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right: -7px;
+}
+.row-2 section::before{
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: #f2f2f2;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ff7979;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon{
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top: 15px;
+  left: -60px;
+}
+.row section .details,
+.row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: #ff7979;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover{
+  transform: scale(0.97);
+}
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left: 40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px){
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
+}
