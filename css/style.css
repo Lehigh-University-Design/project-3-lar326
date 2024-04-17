@@ -442,8 +442,10 @@ body, html {
 }
 
 .stats{
+  font-family: "Libre Franklin", sans-serif;
+  font-weight:500;
   color:black;
-  margin-top: 5em;
+  margin-top: 3em;
   padding-bottom:0;
   margin-left: 5em;
   position: relative;
