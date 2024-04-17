@@ -57,6 +57,7 @@ body, html {
 
 .header .logo {
   font-family:"Libre Franklin", sans-serif;
+  font-style: italic;
   font-weight: 600;
   display: block;
   float: left;
@@ -485,7 +486,7 @@ body, html {
   display:flex;
   justify-content: center;
   background-color: #242526;
-  height:170px;
+  height:150px;
   .buttons{
     padding: 1em;
     margin-top:2em;
